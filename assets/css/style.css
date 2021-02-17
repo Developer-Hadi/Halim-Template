@@ -1,5 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
 
+html, body{
+    height: 100%;
+}
 body{
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #333;
+    font-weight: 400;
+}
+a, a:hover{
+    text-decoration: none;
+}
+
+.bg-style{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+}
+.bg-style::before{
+    position: absolute;
+    content: "";
+    background-color: #333;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.box-btn{
+    background-color: lightpink;
+    padding: 10px 35px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+.box-btn i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    opacity: 0;
+    transition: .4s;
+}
+.box-btn:hover i{
+    right: -5px;
+    opacity: 1;
+    color: #fff;
+}
+.box-btn:hover{
+    color: #fff;
+}
+
+/* Top area css */
+.top-area{
+    background-color: lightpink;
+    padding: 5px;
+}
+
+.top-left a, i{
+    color: #333;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.top-right{
+    float: right;
+}
+
+.menu-area .navbar .navbar-brand{
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 15px;
+    transition: all linear .4s;
+}
+.menu-area .navbar .navbar-brand:hover{
+    color: lightpink;
+}
+.menu-area .navbar .navbar-nav a{
+    font-size: 16px;
+    color: #333;
+    padding: 10px 16px;
+    transition: all linear .4s;
+}
+.menu-area .navbar .navbar-nav a:hover{
+    background-color: lightpink;
+    color: #fff;
+    border-radius: 0 5px 10px 15px;
+    
+}
+
+/* Slider section css */
+
+.slider-area, .sliders, .single-slide, .owl-stage-outer, .owl-stage, .owl-item{
+    height: 100%;
+}
+
+
+.slider-area .slide-content{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.slider-area h4{
+    text-transform: capitalize;
+    font-size: 24px;
+    padding: 10px 0;
+    position: relative;
+}
+.slider-area h4::after{
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: lightpink;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+}
+
+.slider-area h1{
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.owl-dots{
+    position: absolute;
+    right: 40px;
+    display: flex;
+    top: 50%;
+    flex-direction: column;
+    transform: translateY(-50%);
+}
+
+.owl-dots button{
+    background-color: #fff !important;
+    width: 20px;
+    height: 20px;
+    margin: 5px 0;
+}
+.owl-dots .owl-dot.active{
+    background-color: lightpink !important;
 }
