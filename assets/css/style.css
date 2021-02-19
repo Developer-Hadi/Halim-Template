@@ -155,3 +155,434 @@ a, a:hover{
 .owl-dots .owl-dot.active{
     background-color: lightpink !important;
 }
+
+
+/* About Area css */
+
+.title-area{
+    padding: 100px 0;
+}
+.title-area h4{
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.title-area{
+    position: relative;
+}
+
+.title-area::after{
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: lightpink;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 85px;
+}
+.title-area::before{
+    position: absolute;
+    content: "";
+    width: 125px;
+    height: 3px;
+    background-color: lightpink;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    bottom: 147px;
+}
+#about-area{
+    padding-bottom: 80px;
+}
+
+.about-content{
+    padding-right: 15px;
+}
+.about-content h4{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 10px 0;
+    position: relative;
+}
+
+.single-about{
+    display: flex;
+}
+
+.icon i{
+    color: lightpink;
+    border: 1px solid lightpink;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .4s;
+}
+.icon:hover i{
+    color: white;
+    background-color: lightpink;
+}
+
+.single-content h4{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px 0px;
+    position: relative;
+}
+.single-content h4::after,.about-content h4::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: lightpink;
+    bottom: 0;
+    left: 0;
+}
+
+.skill-accordion .accordion-button{
+    background-color: lightpink;
+    color: #fff;
+}
+.skill-accordion .accordion-body{
+    background-color: #fff;
+    color: #333;
+}
+
+.progress-item {
+    padding-bottom: 15px;
+}
+.progress-item h5{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.progress-item .progress-bar{
+    background-color: lightpink;
+}
+
+/* Service css */
+#service-area{
+    padding-bottom: 80px;
+}
+.service-item{
+    transition: .3s;
+}
+.service-item i{
+    background-color: lightpink;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20;
+    color: #fff;
+    transition: .3s;
+}
+.service-item h4{
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.service-item p{
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 5px;
+}
+.service-item:hover i{
+    border-radius: 0;
+}
+.service-item:hover{
+    border-bottom: 3px solid lightpink;
+}
+
+/* Counter css */
+
+.counter-item {
+    background-color: rgba(34, 34, 68, 0.8);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+#counter-area .col-xl-3:nth-child(2n) .counter-item{
+    background-color: rgba(34, 34, 68, 0.75);
+}
+
+.counter-item i {
+    background-color: lightpink;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.counter-item h4 span {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.counter-item h4 {
+    font-size: 18px;
+}
+
+/* Team css */
+.team-member {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+}
+
+.team-content {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: .7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) rotate(180deg);
+    transition: .3s;
+}
+.team-member:hover .team-content{
+    transform: scale(1) rotate(360deg);
+}
+
+.team-content h4 {
+    color: #fff;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.team-content h4 span {
+    display: block;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.team-icon i {
+    color: #fff;
+    margin-top: 18px;
+}
+
+
+/* Testimonial css */
+
+.testimonial-item {
+    width: 100%;
+    height: 225px;
+    background: #333;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px 15px;
+    position: relative;
+    transition: .4s;
+    margin: 40px;
+}
+
+.testimonial-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: -40px;
+    background: #333;
+    padding: 2px;
+}
+
+.owl-carousel .owl-item img{
+    max-width: 100px;
+}
+.testimonial-item p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 16px;
+}
+
+.testimonial-item h4 {
+    font-size: 25px;
+    text-transform: capitalize;
+    padding-top: 5px;
+}
+
+.testimonial-item h4 span {
+    display: block;
+    font-size: 16px;
+}
+
+.testimonial-item:hover {
+    background: lightpink;
+}
+
+.owl-item.active.center .testimonial-item{
+    background: lightpink;
+}
+
+/* Blog css */
+
+.blog-item {
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.blog-item img {
+    width: 100%;
+}
+
+.blog-content {
+    padding: 30px 15px;
+}
+
+.blog-title h4 {
+    FONT-WEIGHT: 600;
+    font-size: 25px;
+}
+
+.blog-meta a {
+    font-size: 16px;
+    color: #330;
+    font-weight: 500;
+}
+
+.blog-content p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* CTA css */
+
+section#cta-area {
+    padding: 40px 0;
+    position: relative;
+}
+
+section#cta-area h4{
+    color: #fff;
+    z-index: 2;
+    font-size: 26px;
+}
+section#cta-area p{
+    font-size: 14px;
+    color: #fff;
+    z-index: 2;
+    margin-bottom: 0;
+}
+
+section#cta-area::after {
+    position: absolute;
+    content: "";;
+    width: 50%;
+    height: 100%;
+    background: rgba(34, 34, 68, 0.8);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+section#cta-area::before {
+    position: absolute;
+    content: "";;
+    width: 50%;
+    height: 100%;
+    background: rgba(34, 34, 68, 0.75);
+    top: 0;
+    right:0;
+    z-index: -1;
+}
+
+/* Footer css */
+
+footer#footer-area {
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer#footer-area .footer-item h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    padding: 15px;
+    padding-top: 25px;
+}
+
+footer#footer-area .footer-item p {
+    font-size: 15px;
+    text-align: center;
+    padding: 0 9px;
+    line-height: 24px;
+}
+
+footer#footer-area .footer-item h4{
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+footer#footer-area .footer-item h4::before{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: lightpink;
+    bottom: 0;
+    left: 0;
+}
+
+footer#footer-area .footer-item ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer#footer-area .footer-item ul li{
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+footer#footer-area .footer-item ul li i,
+footer#footer-area .footer-item ul li a,
+footer#footer-area .footer-item ul li a i{
+    color: #fff;
+}
+
+.footer-bottom{
+    border-top: 1px solid #e9f;
+    padding-top: 30px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom p{
+    margin: 0;
+}
+
+.footer-bottom .footer-social a{
+    color: #fff;
+}
+
