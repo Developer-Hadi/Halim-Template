@@ -689,3 +689,95 @@ section#breadcumb-area ul li a {
     color: #fff;
     padding: 5px;
 }
+
+
+/* Portfolio area css */
+#portfolio-area{
+    margin-bottom: 80px;
+}
+.portfolio-menu {
+    margin: 50px 0;
+}
+
+.portfolio-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.portfolio-menu ul li {
+    padding: 5px 15px;
+    border: 1px solid lightpink;
+    margin: 0 3px;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+}
+
+.portfolio-item .portfolio-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    opacity: 0;
+    transition: .3s;
+    transform: scale(0);
+}
+.portfolio-item:hover .portfolio-content{
+    opacity: 1;
+    transform: scale(1);
+}
+.portfolio-item .portfolio-content::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: .7;
+    z-index: -1;
+}
+
+.portfolio-item .portfolio-content h4 {
+    text-transform: capitalize;
+    font-size: 24px;
+    padding-top: 15px;
+}
+
+.portfolio-item .portfolio-content h4 span {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.portfolio-content i {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.portfolio-menu .active{
+    background-color: lightpink;
+    color: #fff;
+}

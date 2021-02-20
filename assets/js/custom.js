@@ -20,6 +20,19 @@ $(document).ready(function(){
     // counter active
     $('.counter').counterUp();
 
+    // Portfolio filtering
+    // init Isotope
+    var $grid = $('.portfolio-items').isotope();
+    // filter items on li click
+    $('.portfolio-menu').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
+
+    //filter items menu active
+    $('.portfolio-menu').on('click','li', function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    })
 
 });
 
