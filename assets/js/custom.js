@@ -1,9 +1,10 @@
 $(document).ready(function(){
+    
     // slider active
     $(".sliders").owlCarousel({
         'items':1,
-        'loop': true,
         'autoplay': true,
+        'loop': true
     });
     // Testimonial slide active
     $(".testimonials").owlCarousel({
@@ -18,4 +19,18 @@ $(document).ready(function(){
 
     // counter active
     $('.counter').counterUp();
-  });
+
+
+});
+
+  // Sticy Menu
+  $(window).load(function(){
+    $(this).on('scroll', function(){
+        if($(this).scrollTop() > 40){
+            $('.menu-area').addClass('sticky');
+        }
+        else{
+            $('.menu-area').removeClass('sticky');
+        }
+    });
+});

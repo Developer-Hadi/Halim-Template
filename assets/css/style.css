@@ -92,12 +92,82 @@ a, a:hover{
     padding: 10px 16px;
     transition: all linear .4s;
 }
-.menu-area .navbar .navbar-nav a:hover{
+.menu-area .navbar .navbar-nav .nav-item:hover .nav-link{
     background-color: lightpink;
     color: #fff;
     border-radius: 0 5px 10px 15px;
     
 }
+
+header.menu-area.sticky {
+    position: fixed;
+    background: #fff;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid #333;
+    transition: .5s;
+}
+
+header.menu-area.sticky .navbar-brand {
+    font-size: 22px;
+}
+header.menu-area.sticky .nav-link {
+    font-size: 14px;
+}
+
+/* Dropdown menu css */
+
+.menu-area .navbar .navbar-nav li {
+    position: relative;
+}
+
+.menu-area .navbar .navbar-nav li ul {
+    position: absolute;
+    min-width: 160px;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    background: #fff;
+    z-index: 9999;
+    box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.5);
+    transition: .3s;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+}
+
+.menu-area .navbar .navbar-nav li ul li:hover{
+    background-color: lightpink;
+    display: block;
+    border-bottom: 0;
+}
+.menu-area .navbar .navbar-nav li ul li:hover a{
+    color: #fff;
+}
+
+.menu-area .navbar .navbar-nav li:hover ul {
+    transform: scaleY(1);
+}
+
+.menu-area .navbar .navbar-nav li ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: inline-block;
+}
+.navbar{
+    padding: 0;
+}
+a.nav-link i {
+    font-size: 12px;
+    transition: .4s;
+}
+
+a.nav-link:hover i {
+    color: #fff;
+}
+
 
 /* Slider section css */
 
@@ -586,3 +656,36 @@ footer#footer-area .footer-item ul li a i{
     color: #fff;
 }
 
+
+/* About CSS */
+
+section#breadcumb-area {
+    background: lightpink;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+section#breadcumb-area h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 600;
+    
+    text-align: center;
+}
+
+section#breadcumb-area ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+section#breadcumb-area ul li a {
+    margin: 5px 0;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 5px;
+}
