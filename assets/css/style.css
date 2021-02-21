@@ -90,6 +90,7 @@ a, a:hover{
     font-size: 16px;
     color: #333;
     padding: 10px 16px;
+    margin: 10px 0;
     transition: all linear .4s;
 }
 .menu-area .navbar .navbar-nav .nav-item:hover .nav-link{
@@ -115,6 +116,7 @@ header.menu-area.sticky .navbar-brand {
 }
 header.menu-area.sticky .nav-link {
     font-size: 14px;
+    margin: 0;
 }
 
 /* Dropdown menu css */
@@ -662,7 +664,7 @@ footer#footer-area .footer-item ul li a i{
 section#breadcumb-area {
     background: lightpink;
     padding: 30px 0;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 section#breadcumb-area h2 {
@@ -780,4 +782,136 @@ section#breadcumb-area ul li a {
 .portfolio-menu .active{
     background-color: lightpink;
     color: #fff;
+}
+
+/* Single Portfoli css */
+
+section#single-portfolio-area {
+    margin-bottom: 50px;
+}
+
+section#single-portfolio-area h2 {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 20px 0;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+section#single-portfolio-area h2::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: lightpink;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 5px;
+}
+
+section#single-portfolio-area p {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 20px 0;
+    text-align: justify;
+    color: #333;
+}
+
+.portfolio-title {
+    border-bottom: 1px solid #dddd;
+    margin: 25px 0;
+}
+
+.portfolio-title h4 {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+section#single-portfolio-area iframe {
+    height: 350px;
+}
+
+section#single-portfolio-area ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section#single-portfolio-area ul li {
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+
+/* Single Blog css */
+
+.comment-form label {
+    padding: 5px 0;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.comment-form textarea {
+    margin: 10px 0;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 0;
+}
+
+.comment-form input {
+    border-radius: 0;
+    padding: 10px;
+}
+
+input.form-control:focus, textarea:focus {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 0;
+    outline: 0;
+}
+
+/* Contact css */
+section#contact-area {
+    margin: 60px 0;
+}
+
+.address-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 5px;
+}
+
+.address-area i {
+    color: #fff;
+    background: lightpink;
+    /* padding: 15px; */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.address-area h4 {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 15px 0;
+}
+
+.address-area h4 span {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: 400;
+}
+
+.map-area {
+    margin: 40px 5px;
 }
