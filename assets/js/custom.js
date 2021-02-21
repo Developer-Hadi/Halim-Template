@@ -34,6 +34,8 @@ $(document).ready(function(){
         $(this).addClass('active').siblings().removeClass('active');
     })
 
+   
+
 });
 
   // Sticy Menu
@@ -47,3 +49,13 @@ $(document).ready(function(){
         }
     });
 });
+
+  // gallery popup active
+
+$('.gallery-image').magnificPopup({
+    type: 'image',
+    gallery:{
+        enabled: true
+    }
+    
+  });

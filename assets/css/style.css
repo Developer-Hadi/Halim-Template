@@ -48,12 +48,12 @@ a, a:hover{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 5px;
+    right: 8px;
     opacity: 0;
     transition: .4s;
 }
 .box-btn:hover i{
-    right: -5px;
+    right: 0px;
     opacity: 1;
     color: #fff;
 }
@@ -914,4 +914,10 @@ section#contact-area {
 
 .map-area {
     margin: 40px 5px;
+}
+
+/* Gallery css */
+
+#gallery-area{
+    margin: 60px 0;
 }
